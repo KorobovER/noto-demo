@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+html {
+    font-size: 16px;
+}
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+nav > a {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 0.875rem;
+    width: 100%;
+    padding: 0.5rem 0.8175rem;
+    border-radius: .25rem;
+}
+
+@media screen and (max-width: 639px) {
+    nav > a {
+        flex-direction: column;
+        text-align: center;
+        font-size: .75rem;
+    }
+}
+
+#userinfo {
+    bottom: 0;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+#stateact {
+    background-color: rgb(241, 245, 249);
+    color: rgb(30, 41, 59);
+}
+.dark {
+    background-color: #262626;
+}
+.dark a,.dark p,.dark div {
+    color:white;
+}
+input[type="search"]::placeholder {
+    text-align: center;
+}
